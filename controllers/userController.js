@@ -2,6 +2,7 @@ import User from "../models/UserModel.js";
 import Exercise from "../models/ExerciseModel.js";
 import StatusCodes from "http-status-codes";
 import { hashPassword } from "../utils/utils.js";
+import fetch from 'node-fetch'
 
 export const getUser = async (req, res) => {
   const { id: userId } = req.user;
